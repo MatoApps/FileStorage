@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorage.Web", "Sample\F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorage.Core", "Sample\FileStorage.Core\FileStorage.Core.csproj", "{804E52C8-A926-40E0-84A9-B207C4EADDE2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorage.Domain.Nuget", "FileStorage.Domain\FileStorage.Domain.Nuget.csproj", "{4094A3ED-86AD-4004-9701-E3B90FF3CB5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{804E52C8-A926-40E0-84A9-B207C4EADDE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{804E52C8-A926-40E0-84A9-B207C4EADDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{804E52C8-A926-40E0-84A9-B207C4EADDE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4094A3ED-86AD-4004-9701-E3B90FF3CB5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4094A3ED-86AD-4004-9701-E3B90FF3CB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4094A3ED-86AD-4004-9701-E3B90FF3CB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4094A3ED-86AD-4004-9701-E3B90FF3CB5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

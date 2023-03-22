@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackageId>AbpBoilerplate.FileStorage</PackageId>
-		<Version>0.1.0</Version>
+		<Version>0.1.1</Version>
 		<LangVersion>latest</LangVersion>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 		<Authors>LinXiao</Authors>
@@ -13,7 +13,7 @@
 		<Copyright>Copyright © 2023</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/MatoApps/FileStorage</RepositoryUrl>
-		<Configurations>Debug;Release;Pub</Configurations>
+		<Configurations>Debug;Release</Configurations>
 	</PropertyGroup>
 
 	<ItemGroup>
