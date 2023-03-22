@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage", "FileStorage\FileStorage.csproj", "{9486DA76-046F-40AF-BA19-E62D74EEF5D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorage", "FileStorage\FileStorage.csproj", "{9486DA76-046F-40AF-BA19-E62D74EEF5D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{EE56F68F-3B92-47F9-8557-E8601D5A3F07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorage.Application", "Sample\FileStorage.Application\FileStorage.Application.csproj", "{2FD30995-D744-498A-BD48-16255B950548}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorage.Domain", "FileStorage.Domain\FileStorage.Domain.csproj", "{1E124ED9-845C-4974-8475-343C4FDEA75B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,20 @@ Global
 		{9486DA76-046F-40AF-BA19-E62D74EEF5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9486DA76-046F-40AF-BA19-E62D74EEF5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9486DA76-046F-40AF-BA19-E62D74EEF5D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD30995-D744-498A-BD48-16255B950548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD30995-D744-498A-BD48-16255B950548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD30995-D744-498A-BD48-16255B950548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD30995-D744-498A-BD48-16255B950548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E124ED9-845C-4974-8475-343C4FDEA75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E124ED9-845C-4974-8475-343C4FDEA75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E124ED9-845C-4974-8475-343C4FDEA75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E124ED9-845C-4974-8475-343C4FDEA75B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FD30995-D744-498A-BD48-16255B950548} = {EE56F68F-3B92-47F9-8557-E8601D5A3F07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F7AD920-7266-4BE1-89E7-72BEDE6B6A1B}
