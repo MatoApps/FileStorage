@@ -8,11 +8,14 @@ using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using FileStorage;
+using FileStorage.EntityFrameworkCore;
 
 namespace FileStorage.Application
 {
     [DependsOn(
-        typeof(CAHFileStorageModule)
+        typeof(AbpAutoMapperModule),
+        typeof(FileStorageEntityFrameworkCoreModule),
+        typeof(FileStorageCoreModule)
     )]
     public class FileStorageApplicationModule : AbpModule
     {

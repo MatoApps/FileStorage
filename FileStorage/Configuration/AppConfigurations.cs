@@ -5,7 +5,7 @@ using Abp.Reflection.Extensions;
 
 namespace FileStorage.Configuration
 {
-    public static class AppConfigurations
+    internal static class AppConfigurations
     {
         private static readonly ConcurrentDictionary<string, IConfigurationRoot> _configurationCache;
 

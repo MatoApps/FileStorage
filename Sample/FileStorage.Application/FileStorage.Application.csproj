@@ -5,12 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Abp" Version="8.1.0" />
     <PackageReference Include="Abp.AutoMapper" Version="8.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\FileStorage.Domain\FileStorage.Domain.csproj" />
+    <ProjectReference Include="..\FileStorage.Core\FileStorage.Core.csproj" />
+    <ProjectReference Include="..\FileStorage.EntityFrameworkCore\FileStorage.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
 </Project>
