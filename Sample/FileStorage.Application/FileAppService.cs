@@ -565,6 +565,16 @@ namespace FileStorage.Application
 
             await input.File.CopyToAsync(memoryStream);
 
+            var fileContent = memoryStream.ToArray();
+
+            var configuration = _configurationProvider.Get(input.FileContainerName);
+
+
+            fileDomainService.CheckFileSize(new Dictionary<string, long> { { fileName, fileContent.Length } }, configuration);
+
+            fileDomainService.CheckFileExtension(new[] { fileName }, configuration);
+
+
             var createFileInput = new CreateFileInput
             {
                 FileContainerName = input.FileContainerName,
@@ -573,7 +583,7 @@ namespace FileStorage.Application
                 FileType = input.FileType,
                 ParentId = input.ParentId,
                 OwnerUserId = input.OwnerUserId,
-                Content = memoryStream.ToArray()
+                Content = fileContent
             };
 
             var fd = await fileDomainService.CreateAndGetDownloadInfoAsync(new CreateFileInfo()
